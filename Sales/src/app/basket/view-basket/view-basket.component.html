@@ -1,0 +1,14 @@
+<p>view-basket works!</p>
+
+<div class="form-group">
+    <label for="Department">Department</label>
+    <select id="Department" name="Department"
+    [formControl]="updatetype" class="form-control">
+      <option value="1">white goods</option>
+      <option value="2">gadgets</option>
+      <option value="3">electronics</option>
+    </select>
+  </div>
+
+  <button (click)="onClickGetType()">Show products!</button>
+  {{clickMessage}}
